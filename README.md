@@ -24,8 +24,8 @@ This is my solution to the [Newsletter sign-up form with success message challen
 
 ## 🔗 Live Site
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live site URL here](https://grand-chebakia-bdd0b1.netlify.app/)
+- Solution URL: [Solution URL here](https://github.com/masum-hosen/Newsletter-Sign-up-Form-with-Success-Message)
 
 ## 💡 What I Learned
 
