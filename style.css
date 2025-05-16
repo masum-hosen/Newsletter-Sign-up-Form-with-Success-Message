@@ -1,0 +1,181 @@
+/* font family */
+@font-face {
+  font-family: MyFont;
+  src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Red: hsl(4, 100%, 67%);
+  --Blue-800: hsl(234, 29%, 20%);
+  --Blue-700: hsl(235, 18%, 26%);
+  --Grey: hsl(0, 0%, 58%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.hide {
+  display: none !important;
+}
+
+.container {
+  background-color: var(--Blue-800);
+  /* margin: auto auto; */
+  font-family: MyFont;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card-container {
+  box-sizing: border-box;
+  background-color: var(--White);
+  display: flex;
+  width: 700px;
+  margin: auto auto;
+  padding: 10px;
+  border-radius: 15px;
+}
+.right {
+  width: 60%;
+  padding-left: 20px;
+  /* padding: 20px 50px 20px 20px; */
+}
+.right h1 {
+  font-size: 45px;
+  margin-top: 40px;
+  margin-bottom: 17px;
+}
+.right ul {
+  padding: 20px 0px 10px 30px;
+  list-style-image: url(/assets/images/icon-list.svg);
+}
+.right ul li {
+  margin-bottom: 5px;
+}
+.right form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 10px;
+}
+.right form input {
+  padding: 10px 20px;
+  font-family: inherit;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--Grey);
+}
+.right form label {
+  display: flex;
+  justify-content: space-between;
+}
+.right form label span {
+  font-weight: bold;
+}
+.right form label p {
+  color: var(--Red);
+}
+.right form button {
+  padding: 15px 20px;
+  background-color: var(--Blue-800);
+  color: var(--White);
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+.right form button:hover {
+  background-color: var(--Red);
+  transition: all ease-in 5ms;
+  cursor: pointer;
+}
+.left {
+  width: 40%;
+}
+.left img {
+  width: 100%;
+}
+/* success card style is here */
+.success-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--White);
+  width: 400px;
+  padding: 15px;
+  border-radius: 7px;
+}
+.success-card img {
+  width: 15%;
+}
+.success-card h1 {
+  line-height: 2.5rem;
+  font-size: 40px;
+}
+.success-card button {
+  padding: 15px 20px;
+  background-color: var(--Blue-800);
+  color: var(--White);
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+.success-card button:hover {
+  background-color: var(--Red);
+  transition: all ease-in 5ms;
+  cursor: pointer;
+}
+/* footer style is here */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* ? responsive desine is here */
+
+@media (max-width: 768px) {
+  .card-container {
+    flex-direction: column-reverse;
+    width: 100%;
+    border-radius: 0%;
+    margin: 0;
+    padding: 0;
+  }
+  .right h1 {
+    font-size: 30px;
+  }
+  .right {
+    width: 100%;
+  }
+  .left {
+    width: 100%;
+  }
+  .left img {
+    content: url(/assets/images/illustration-sign-up-mobile.svg);
+  }
+  .success-card {
+    min-height: 100vh;
+    gap: 10px;
+    background-color: var(--White);
+    width: 100%;
+    padding: 20px;
+    border-radius: 0;
+  }
+  .success-card img {
+    margin-top: 30px;
+  }
+  .success-card h1 {
+    margin: 20px 0px;
+  }
+  .success-card button {
+    margin-top: 12rem;
+  }
+}
